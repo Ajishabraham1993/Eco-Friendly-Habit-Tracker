@@ -7,7 +7,7 @@ I propose to create an "Eco-Friendly Habit Tracker" web application using HTML, 
 
 - **Daily Check-In:** Users can log their daily activities related to these habits, marking whether they succeeded or need improvement.
 
-- **Progress Visualization:** Display a simple, visually appealing dashboard that shows users their progress over time, motivating them to stay on track.
+- **History:** You can check your check-in history to keep track of your progress and see when you've achieved these awards.
 
 - **Eco-Tips:** Provide users with daily eco-tips or facts to educate and inspire them on sustainable living.
 
