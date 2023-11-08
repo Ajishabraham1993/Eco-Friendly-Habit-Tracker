@@ -103,6 +103,7 @@ $(document).ready(function () {
 		habitlist = JSON.stringify(habit_list);
     	localStorage.setItem(today+'-habit_list', habitlist);
     	set_badges_list();
+    	set_calhistory();
     });
     // Daily check-in
     $(document).off('click', '#check-in-button');
@@ -198,6 +199,7 @@ $(document).ready(function () {
 				allbadges = JSON.stringify(all_badges);
 				localStorage.setItem('all_badges', allbadges);
 				set_badges_list();
+				set_calhistory();
 			}
 		}
 		let habbitlst = ``;
