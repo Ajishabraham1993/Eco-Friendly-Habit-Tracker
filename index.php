@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Eco-Friendly Habit Tracker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.1/css/selectize.default.css">
+    <link rel="stylesheet" href="style.css?v=<?= time(); ?>">
+    <link rel="icon" type="image/x-icon" href="assets/image/favicon-habit-tracker.ico">
+</head>
+<body>
+	<div class="navbar-fixed">
+       <nav>
+         <div class="nav-wrapper amber darken-2">
+         	<div class="brand-cont">
+         		<span class=" mr-2">
+	         		<img class="brand-logo-img" src="assets/image/favicon-habit-tracker.png"/>
+	         	</span>
+	            <a href="#" class="brand-logo">Eco-Friendly Habit Tracker</a>
+            </div>
+          </div>
+        </nav>
+       </div>
+    <div class="container">
+    	<!--Eco-Tips Section-->
+    	<marquee scrollamount="10" scrolldelay="200" loop="-1"></marquee>
+        
+        <!--Add Habbit Start-->
+        <div class="p-4 bg-light" id="habit-form">
+            <h5>Add New Habit</h5>
+            <input type="text" id="habit-input" placeholder="Enter your eco-friendly habit">
+            <button class="btn btn-info" id="add-habit">Add Habit</button>
+        </div>
+
+        <div class="p-4 bg-light" id="daily-check-in">
+            <h5>Daily Check-In</h5>
+            <div class="cont-daily p-2">
+	            <div class="input-field selhabbitpar">
+		           <select id="habit-select">
+		           </select>
+		           <label>Select Habbit</label>
+		        </div>
+        		<div class="input-field">
+                   <input type="checkbox" id="successchk"/>
+                   <label for="successchk">Done</label>
+                </div>
+                <div class="input-field">
+		        	<button class="btn btn-info" id="check-in-button">Check-In</button>
+		        </div>            
+	        </div>            
+        </div>
+        <!--Add Habbit End-->
+		
+		
+        <div class="p-4 bg-light" id="progress">
+        	<div class="habitlistcls">
+            	<h5>Habbit List</h5>
+            	<span data-position="top" data-tooltip="Show history" class="historyico tooltipped text-success"><i class="fa fa-history bold-200"></i></span>
+            </div>
+        	<!--Habbit History Start-->
+            <div class="history_body hideel">
+            	<div class="input-field selyearpar">
+	            	<select  id="history_year">
+	            		<option value="2020">2020</option>
+	            		<option value="2021">2021</option>
+	            		<option value="2022">2022</option>
+	            		<option selected="" value="2023">2023</option>
+	            	</select>
+	            	<label>Select Year</label>
+	        	</div>
+	            <div class=" p-4">
+	            	<div class="calendar_head">
+	            		<div class="day_hd">Su</div>
+	            		<div class="day_hd">Mo</div>
+				        <div class="day_hd">Tu</div>
+				        <div class="day_hd">We</div>
+				        <div class="day_hd">Th</div>
+				        <div class="day_hd">Fr</div>
+				        <div class="day_hd">Sa</div>				        
+	            	</div>
+	            	<div class="calendar_h">
+				    </div>
+			    </div>
+			    <div class="input-field selyearpar">
+            	<select  id="history_month">
+            		<option value="0">January</option>
+            		<option value="1">February</option>
+            		<option value="2">March</option>
+            		<option value="3">April</option>
+            		<option value="4">May</option>
+            		<option value="5">June</option>
+            		<option value="6">July</option>
+            		<option value="7">August</option>
+            		<option value="8">September</option>
+            		<option value="9">October</option>
+            		<option selected="" value="10">November</option>
+            		<option value="11">December</option>
+            	</select>
+            	<label>Select Year</label>
+        	</div>
+            </div>
+        <!--Habbit History End-->
+        
+        <!--Habbit List Start-->
+            <div id="progress-div">
+            	<div class="rb-container">
+			      <ul class="rb habbit_list">
+			      </ul>
+
+			    </div>
+            </div>
+        </div>
+		<!--Habbit List End-->
+		
+		<!--Achievement Badges Start-->
+        <div class="p-4 bg-light" id="badges">
+            <div class="d-flex"><h5>Achievement Badges</h5><span class="badgeinfo"><i class="fa fa-info-circle bold-200"></i></span></div>
+            <div class="tooltipCustInfo hideel">
+				<div class="tooltipCustInfoIn">
+					<div class="tooltipCustInfoIco"><i class="fa fa-info-circle bold-200"></i></div>
+					<div class="tooltipCustInfoTxt">
+						<p class="m-0">You'll receive awards based on your check-in streak: Wood Award (≥5 days), Iron (≥10), Bronze (≥15), Silver (≥20), and Gold (≥30). These awards will reset at the beginning of each month..</p>
+					</div>
+					<div class="tooltipCustInfoClose"><i class="fa fa-times bold-200" id="SelAppInfotooltipClose"></i></div>
+				</div>
+			</div>
+            <div class="badge_par">
+            	<span class="badges hideel badge_wood">
+            		<img src="assets/image/badge-wood-icon.png"/>
+            	</span>
+            	<span class="badges hideel badge_wood_hide">
+            		<img src="assets/image/badge-wood-icon.png"/>
+            	</span>
+            	<span class="badges hideel badge_iron">
+            		<img src="assets/image/badge-iron-icon.png"/>
+            	</span>
+            	<span class="badges hideel badge_iron_hide">
+            		<img src="assets/image/badge-iron-icon.png"/>
+            	</span>
+            	<span class="badges hideel badge_bronze">
+            		<img src="assets/image/badge-bronze-icon.png"/>
+            	</span>
+            	<span class="badges hideel badge_bronze_hide">
+            		<img src="assets/image/badge-bronze-icon.png"/>
+            	</span>
+            	<span class="badges hideel badge_silver">
+            		<img src="assets/image/badge-silver-icon.png"/>
+            	</span>
+            	<span class="badges hideel badge_silver_hide">
+            		<img src="assets/image/badge-silver-icon.png"/>
+            	</span>
+            	<span class="badges hideel badge_gold">
+            		<img src="assets/image/badge-gold-icon.png"/>
+            	</span>
+            	<span class="badges hideel badge_gold_hide">
+            		<img src="assets/image/badge-gold-icon.png"/>
+            	</span>
+            </div>
+        </div>
+        <!--Achievement Badges End-->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.1/js/standalone/selectize.min.js"></script>
+    <script src="main.js?v=<?= time(); ?>"></script>
+</body>
+</html>
