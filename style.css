@@ -316,22 +316,40 @@ marquee span {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+
 @media only screen and (max-width: 992px) {
     body{
         max-width:100%;
-	width:100%;
+        width: 100%;
     }
     nav .brand-logo {
         left: auto;
         -webkit-transform: none;
         transform: none;
-	font-size: 15px;
+        font-size: 15px;
     }
     .container{
         max-width: 100%;
     }
-    .cont-daily,.badge_par,.history_body{
+    .badge_par,.history_body{
         flex-direction: column;
         gap: 18px;
     }
+    .cont-daily{
+        flex-direction: column;
+    }
+    .checkpar{
+        margin-top: 0px;
+    }
+    .btnaddpar{
+        margin-top: 25px;
+    }
+
+}
+@media only screen and (min-width: 601px){
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
 }
