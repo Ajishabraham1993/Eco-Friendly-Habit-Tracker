@@ -157,7 +157,7 @@ $(document).ready(function () {
 	//function for create achievement badge list
 	function set_badges_list(){
 		$('.badges').addClass('hideel');
-		if(all_badges && all_badges[monthnow+'-'+yearnow].length){
+		//if(all_badges && all_badges[monthnow+'-'+yearnow].length){
 			if(all_badges[monthnow+'-'+yearnow].length>4){
 				$('.badge_wood').removeClass('hideel');
 			}else{
@@ -183,7 +183,7 @@ $(document).ready(function () {
 			}else{
 				$('.badge_gold_hide').removeClass('hideel');
 			}
-		}		
+		//}		
 	}
 	
 	//function for create habbit list
