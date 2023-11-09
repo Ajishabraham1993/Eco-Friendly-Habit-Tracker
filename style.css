@@ -317,8 +317,20 @@ marquee span {
   background: #555; 
 }
 @media (max-width:767px) {
-body{
-	overflow:hidden;
-	max-width:100%;
-}
+	body{
+		overflow:hidden;
+		max-width:100%;
+	}
+	nav .brand-logo {
+	    left: auto;
+	    -webkit-transform: none;
+	    transform: none;
+	}
+	.container{
+		max-width: 100%;
+	}
+	.cont-daily,.badge_par,.history_body{
+		flex-direction: column;
+    		gap: 18px;
+	}
 }
