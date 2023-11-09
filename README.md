@@ -4,6 +4,8 @@ I propose to create an "Eco-Friendly Habit Tracker" web application using HTML, 
 
 ### Documentation
 For detailed usage instructions and documentation, please refer to the [Eco-Friendly-Habit-Tracker Documentation](Documentation.md).
+To access the Eco-Friendly-Habit-Tracker, please visit our [website](https://ajishabraham1993.github.io/Eco-Friendly-Habit-Tracker/).
+
 
 ### Key Features
 - **Habit Tracking:** Users can define eco-friendly habits they want to adopt, such as reducing water usage, conserving energy, recycling, or using public transport.
