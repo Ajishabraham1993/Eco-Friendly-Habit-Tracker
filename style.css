@@ -351,5 +351,9 @@ marquee span {
         width: 100%;
         padding: 15px;
     }
-
+}
+@media only screen and (max-width: 600px) {
+  #toast-container {
+    bottom: 5%;
+  }
 }
