@@ -2,6 +2,9 @@
 ## Problem Description
 I propose to create an "Eco-Friendly Habit Tracker" web application using HTML, CSS, and JavaScript. The problem this project aims to solve is the need for individuals to develop eco-friendly habits and track their progress. Many people want to reduce their environmental impact but often struggle to maintain consistent sustainable practices.
 
+### Documentation
+For detailed usage instructions and documentation, please refer to the [Eco-Friendly-Habit-Tracker Documentation](documentation.md).
+
 ### Key Features
 - **Habit Tracking:** Users can define eco-friendly habits they want to adopt, such as reducing water usage, conserving energy, recycling, or using public transport.
 
