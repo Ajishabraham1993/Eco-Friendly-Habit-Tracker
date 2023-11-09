@@ -330,6 +330,7 @@ marquee span {
     }
     .container{
         max-width: 100%;
+	width:100%;
     }
     .badge_par,.history_body{
         flex-direction: column;
