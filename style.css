@@ -318,13 +318,14 @@ marquee span {
 }
 @media only screen and (max-width: 992px) {
     body{
-        overflow:hidden;
         max-width:100%;
+	width:100%;
     }
     nav .brand-logo {
         left: auto;
         -webkit-transform: none;
         transform: none;
+	font-size: 15px;
     }
     .container{
         max-width: 100%;
