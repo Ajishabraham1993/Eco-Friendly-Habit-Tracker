@@ -15,7 +15,7 @@ $(document).ready(function () {
 		all_badges[monthnow+'-'+yearnow] = [];
 	}
 	//for badge example
-	//all_badges[monthnow+'-'+yearnow] = ['1','2','3','4','5','6','1','2','3','4','5','6'];
+	all_badges[monthnow+'-'+yearnow] = ['1','2','3','4','5','6','1','2','3','4','5','6'];
 	
 	set_habit_sel();
 	set_habit_list();
