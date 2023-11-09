@@ -316,3 +316,9 @@ marquee span {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+@media (max-width:767px) {
+body{
+	overflow:hidden;
+	max-width:100%;
+}
+}
