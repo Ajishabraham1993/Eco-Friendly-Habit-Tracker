@@ -330,9 +330,10 @@ marquee span {
     }
     .container{
         max-width: 100%;
-	width:100%;
+        width: 100%;
+	padding: 15px;
     }
-    .badge_par,.history_body{
+    .history_body{
         flex-direction: column;
         gap: 18px;
     }
@@ -345,16 +346,133 @@ marquee span {
     .btnaddpar{
         margin-top: 25px;
     }
-
+    .history_body{
+        margin-top: 75px;
+        background:none;
+    }
+    .input-field{
+        width:100%
+    }
+    #progress-div{
+        margin-top: 60px;
+        width: 100%;
+    }
+    .badges  img{
+        width: 100px;
+    }
+    .badge_par{
+        flex-wrap: wrap;
+    }
+    .calfull{
+        padding-top: 10px !important;
+    }
+#toast-container {
+    bottom: 5%;
+  }
 }
 @media only screen and (min-width: 601px){
-    .container {
+#toast-container {
+    bottom: 5%;
+  }
+    body{
+        max-width:100%;
         width: 100%;
-        padding: 15px;
+    }
+    nav .brand-logo {
+        left: auto;
+        -webkit-transform: none;
+        transform: none;
+        font-size: 15px;
+    }
+    .container{
+        max-width: 100%;
+        width: 100%;
+	padding: 15px;
+    }
+    .history_body{
+        flex-direction: column;
+        gap: 18px;
+    }
+    .cont-daily{
+        flex-direction: column;
+    }
+    .checkpar{
+        margin-top: 0px;
+    }
+    .btnaddpar{
+        margin-top: 25px;
+    }
+    .history_body{
+        margin-top: 75px;
+        background:none;
+    }
+    .input-field{
+        width:100%
+    }
+    #progress-div{
+        margin-top: 60px;
+        width: 100%;
+    }
+    .badges  img{
+        width: 100px;
+    }
+    .badge_par{
+        flex-wrap: wrap;
+    }
+    .calfull{
+        padding-top: 10px !important;
     }
 }
 @media only screen and (max-width: 600px) {
   #toast-container {
     bottom: 5%;
   }
+   body{
+        max-width:100%;
+        width: 100%;
+    }
+    nav .brand-logo {
+        left: auto;
+        -webkit-transform: none;
+        transform: none;
+        font-size: 15px;
+    }
+    .container{
+        max-width: 100%;
+        width: 100%;
+	padding: 15px;
+    }
+    .history_body{
+        flex-direction: column;
+        gap: 18px;
+    }
+    .cont-daily{
+        flex-direction: column;
+    }
+    .checkpar{
+        margin-top: 0px;
+    }
+    .btnaddpar{
+        margin-top: 25px;
+    }
+    .history_body{
+        margin-top: 75px;
+        background:none;
+    }
+    .input-field{
+        width:100%
+    }
+    #progress-div{
+        margin-top: 60px;
+        width: 100%;
+    }
+    .badges  img{
+        width: 100px;
+    }
+    .badge_par{
+        flex-wrap: wrap;
+    }
+    .calfull{
+        padding-top: 10px !important;
+    }
 }
