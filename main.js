@@ -47,6 +47,7 @@ $(document).ready(function () {
             $('.toast').addClass('dangeralrt');
 			return false;
 		}
+	    console.log(habit,habit.lenght);
 	 if(habit.lenght>100){        	
         	Materialize.toast('Habbit cannot exceed 100 length!', 2000, '', function toastCompleted(){
                      $('.toast').removeClass('dangeralrt');
