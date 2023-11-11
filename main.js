@@ -37,6 +37,13 @@ $(document).ready(function () {
             $('.toast').addClass('dangeralrt');
 			return false;
 		}
+	 if(habit.lengh>200){        	
+        	Materialize.toast('Habbit cannot exceed 200 length!', 2000, '', function toastCompleted(){
+                     $('.toast').removeClass('dangeralrt');
+            });
+            $('.toast').addClass('dangeralrt');
+			return false;
+		}
         var option = {};
 	    option.id = generateUniqueId(6);
 	    option.text = removeHtmlTags(habit);
