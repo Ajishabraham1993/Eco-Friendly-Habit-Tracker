@@ -27,9 +27,19 @@ $(document).ready(function () {
 	
     $('#habit-input').focus();
     //add habbit event
+	let rate_limit = 0;
     $(document).off('click', '#add-habit');
     $(document).on('click', '#add-habit', function() {
+	    rate_limit++;
         var habit = $('#habit-input').val();
+	    
+        if(rate_limit>5){        	
+        	Materialize.toast('Please dont spamming add habbit!', 2000, '', function toastCompleted(){
+                     $('.toast').removeClass('dangeralrt');
+            });
+            $('.toast').addClass('dangeralrt');
+			return false;
+		}
         if(habit==''){        	
         	Materialize.toast('Please enter a habbit!', 2000, '', function toastCompleted(){
                      $('.toast').removeClass('dangeralrt');
@@ -37,8 +47,8 @@ $(document).ready(function () {
             $('.toast').addClass('dangeralrt');
 			return false;
 		}
-	 if(habit.lengh>200){        	
-        	Materialize.toast('Habbit cannot exceed 200 length!', 2000, '', function toastCompleted(){
+	 if(habit.lengh>100){        	
+        	Materialize.toast('Habbit cannot exceed 100 length!', 2000, '', function toastCompleted(){
                      $('.toast').removeClass('dangeralrt');
             });
             $('.toast').addClass('dangeralrt');
@@ -149,6 +159,7 @@ $(document).ready(function () {
 			all_habit.push(new_habbit);
 			let allhabit = JSON.stringify(all_habit);
 			localStorage.setItem('all_habit', allhabit);
+			rate_limit=0;
 		}
 		let select = `<select id="habit-select"><option value="">Select Habbit</option>`;
 		if(all_habit.length){
